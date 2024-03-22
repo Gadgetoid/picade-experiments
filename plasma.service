@@ -1,0 +1,12 @@
+[Unit]
+Description=Plasma LEDs
+DefaultDependencies=no
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/home/phil/picade/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
